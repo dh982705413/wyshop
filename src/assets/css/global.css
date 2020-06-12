@@ -1,0 +1,14 @@
+#app,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: #eee;
+}
+.van-grid-item__content {
+  padding: 0;
+}
+h4,p{
+  margin: 0;
+}
