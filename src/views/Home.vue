@@ -124,25 +124,13 @@
     </div>
     <!-- 导航栏 -->
     <div class="nav">
-      <van-tabbar v-model="active"
-                  :placeholder="true"
-                  active-color="#c0392b">
-        <van-tabbar-item name="home"
-                         icon="home-o">首页</van-tabbar-item>
-        <van-tabbar-item name="medal"
-                         icon="medal-o">专题</van-tabbar-item>
-        <van-tabbar-item name="apps"
-                         icon="apps-o">分类</van-tabbar-item>
-        <van-tabbar-item name="cart"
-                         icon="shopping-cart-o">购物车</van-tabbar-item>
-        <van-tabbar-item name="setting"
-                         icon="user-o">我的</van-tabbar-item>
-      </van-tabbar>
+      <tab-btn />
     </div>
   </div>
 </template>
 
 <script>
+import tabBtn from '../components/tabBtn'
 export default {
   name: 'Home',
   created () {
@@ -185,6 +173,9 @@ export default {
       return this.indexData.categoryList
     }
 
+  },
+  components: {
+    tabBtn
   }
 }
 </script>

@@ -12,10 +12,20 @@ import {
   CellGroup,
   Card,
   Tabbar,
-  TabbarItem
+  TabbarItem,
+  TreeSelect,
+  Tab,
+  Tabs,
+  Pagination,
+  icon
 } from 'vant'
 
+Vue.use(icon)
+Vue.use(Pagination)
+Vue.use(Tab)
+Vue.use(Tabs)
 Vue.use(Tabbar)
+Vue.use(TreeSelect)
 Vue.use(TabbarItem)
 Vue.use(Card)
 Vue.use(Cell)
