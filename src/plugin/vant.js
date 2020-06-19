@@ -17,9 +17,27 @@ import {
   Tab,
   Tabs,
   Pagination,
-  icon
+  icon,
+  NavBar,
+  Sku,
+  GoodsAction,
+  GoodsActionIcon,
+  GoodsActionButton,
+  Toast,
+  Checkbox,
+  CheckboxGroup,
+  SubmitBar
 } from 'vant'
 
+Vue.use(SubmitBar)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Card)
+Vue.use(GoodsActionButton)
+Vue.use(GoodsAction)
+Vue.use(GoodsActionIcon)
+Vue.use(Sku)
+Vue.use(NavBar)
 Vue.use(icon)
 Vue.use(Pagination)
 Vue.use(Tab)
@@ -38,3 +56,4 @@ Vue.use(Swipe)
 Vue.use(SwipeItem)
 Vue.use(Button)
 Vue.use(Search)
+Vue.prototype.$toast = Toast

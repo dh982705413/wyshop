@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Category from '../views/Category.vue'
 import CategoryList from '../views/CategoryList.vue'
+import Product from '../views/Product.vue'
 
 Vue.use(VueRouter)
 
@@ -30,6 +31,17 @@ const routes = [
     name: 'categorylist',
     component: CategoryList,
     props: true
+  },
+  {
+    path: '/product/:id',
+    name: 'product',
+    component: Product,
+    props: true
+  },
+  {
+    path: '/buycart',
+    name: 'buycart',
+    component: () => import('../views/buyCart.vue')
   }
 ]
 

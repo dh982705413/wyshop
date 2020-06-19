@@ -16,3 +16,7 @@ p {
 .van-tabbar{
   border-top: 1px solid #eee;
 }
+h3{
+  text-align: center;
+  margin: 0;
+}

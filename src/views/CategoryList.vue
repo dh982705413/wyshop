@@ -29,9 +29,11 @@
                   gutter="1"
                   clickable>
           <van-grid-item v-for="(goods,index2) in goodsList"
-                         :key="index2">
+                         :key="index2"
+                         :to="'/product/'+goods.id">
             <van-image :src="goods.list_pic_url" />
             <span class="goods-name van-ellipsis">{{goods.name}}</span>
+            <span style="color:red;font-size:14px">￥{{goods.retail_price}}元</span>
           </van-grid-item>
         </van-grid>
         <div v-if="goodsList.length>0">
